@@ -14,3 +14,9 @@ app.get('/', (req, res) => {
 	  const name = process.env.NAME || 'World';
 	  res.send(`Hello ${name}!`);
 });
+
+app.get('/whois', (req, res) => {
+	  res.send('Ibu is a strapping young fella');
+	  res.status(200);
+});
+
